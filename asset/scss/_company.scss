@@ -1,0 +1,26 @@
+@import './global';
+@import './variable';
+
+.company {
+    &-container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    padding: 200px 0 0 0;
+    width: 100%;
+    &-heading {
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 160%;
+        text-align: center;
+        color: $gray;
+    }
+    &-icons {
+        margin-top: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+
+    }
+}

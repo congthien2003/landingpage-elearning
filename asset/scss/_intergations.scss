@@ -1,0 +1,92 @@
+@import "./global";
+@import "./variable";
+
+.intergations {
+    padding-top: 200px;
+    &-container {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+    &-images {
+        width: calc(100% - 687px);
+    }
+    &-img {
+        max-width: 228px;
+        max-height: 195px;
+        position: absolute;
+        img {
+            width: 50%;
+        }
+        
+        &:nth-child(1) {
+            top: 0;
+            left: 0;
+        }
+        &:nth-child(2) {
+            top: 20px;
+            left: 200px;
+        }
+        &:nth-child(3) {
+            top: 50%;
+            left: 40px;
+        }
+        &:nth-child(4) {
+            top: 50%;
+            left: 240px;
+        }
+    }
+
+    &-content {
+        width: 687px;
+    }
+    &-heading {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        &--line {
+            width: 80px;
+            height: 1px;
+            background-color: $gray;
+        }
+        &--title {
+            font-size: 14px;
+            font-weight: 400;
+            color: $gray;
+            letter-spacing: 4px;
+        }
+    }
+    &-desc {
+        margin-top: 24px;
+        &--heading {
+            color: $primary-color;
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 180%;
+
+            span {
+                color: $secondary-color;
+            }
+        }
+        &--info {
+            margin-top: 24px;
+            color: $gray;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 180%;
+        }
+    }
+    &-btn {
+        width: 350px;
+        margin-top: 40px;
+        transition: 0.2s ease;
+    }
+    &-btn:hover {
+        background-color: $secondary-color;
+        color: white;
+    }
+}

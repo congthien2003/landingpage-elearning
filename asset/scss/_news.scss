@@ -1,0 +1,119 @@
+@import "./global";
+@import "./variable";
+
+.news-tag {
+    background-color: #F4C467;
+    color: black;
+    border-radius: 20px;
+    text-align: center;
+    padding: 4px 8px;
+}
+
+.news {
+    padding: 200px 0;
+    &-container {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    &-heading {
+        font-size: 33px;
+        font-weight: 600;
+        font-family: $font-primary;
+        color: $primary-color;
+        text-align: center;
+
+    }
+    &-desc {
+        font-size: 22px;
+        font-weight: 400;
+        font-family: $font-secondary;
+        color: $gray;
+        margin-top: 24px;
+        text-align: center;
+        line-height: 180%;
+    }
+    
+    &-content {
+        margin-top: 100px;
+        display: flex;
+        gap: 100px;
+        &-left {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            max-width: 640px;
+            img {
+                width: 500px;
+            }
+            &__tag {
+                background-color: #F4C467;
+                color: black;
+                border-radius: 20px;
+                max-width: 100px;
+                text-align: center;
+                padding: 4px 8px;
+            }
+            &__title {
+                font-size: 22px;
+                font-weight: 500;   
+                line-height: 180%;
+                max-width: 500px;
+
+            }
+            &__desc {
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 180%;
+                color: #696984;
+                max-width: 400px;
+            }
+            &__read {
+                font-size: 20px;
+                color: #696984;
+                text-decoration: underline;
+            }
+        }
+
+        &-right {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+            .item-right {
+                display: flex;
+                gap: 30px;
+                &__img {
+                    position: relative;
+                    img{
+                        width: 250px;
+                    }
+                }
+                &__tag {
+                    font-size: 18px;
+                    font-weight: 400;
+                    position: absolute;
+                    bottom: 20px;
+                    right: 15px;
+                }
+                &__content {
+
+                    &--title {
+                        font-size: 18px;
+                        font-weight: 500;
+                        font-family: $font-primary;
+                        color: #252641;
+                        line-height: 180%;
+                    }
+                    &--desc {
+                        margin-top: 20px;
+                        font-size: 16px;
+                        font-weight: 300;
+                        color: #696984;
+                        line-height: 180%;
+                    }
+                }
+            }
+        }
+    }
+}

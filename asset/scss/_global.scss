@@ -1,0 +1,66 @@
+body {
+    font-size: 22px;
+    color: $graydark;
+    font-family: 400;
+    line-height: 1;
+    font-family: $font-primary;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.btn {
+    font-size: 22px;
+    font-weight: 300;
+    padding: 13px 50px;
+    border-radius: 80px;
+    line-height: 180%;
+    text-align: center;
+    font-family: $font-primary;
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+    &--white {
+        background-color: #ffffff;
+        color: $gray;
+    }
+    &--primary {
+        background-color: $secondary-color;
+        color: #ffffff;
+    }
+    &--transparent {
+        background-color: transparent;
+        color: white;
+    }
+    &--blue {
+        background-color: $blue;
+        color: #ffffff;
+    }
+    &--border-secondary {
+        border: 1px solid $secondary-color;
+    }
+}
+
+.bg-primary {
+    background-color: $primary-color;
+}
+
+.bg-second {
+    background-color: $secondary-color;
+}
+.bg-third {
+    background-color: $third-color;
+}
+
+.text {
+    &-secondary {
+        color: $secondary-color;
+    }
+}
+    
+
+
+
+

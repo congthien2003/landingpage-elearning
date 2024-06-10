@@ -1,0 +1,122 @@
+.header {
+    background-color: $yellow;
+    border-radius: 0 0 200px 200px;
+    &-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    &-top {
+        padding-top: 60px;
+        display: flex;
+        align-items: center;
+        padding-bottom: 83px;
+    }
+    &-logo {
+        width: 180px;
+    }
+    &-nav {
+        margin-left: auto;
+        display: flex;
+        gap: 80px;
+        
+    }
+    &-auth {
+        margin-left: 80px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &-main {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 0 100px;
+    }
+    &-content {
+        max-width: 651px;
+        .content-title {
+            color: $primary-color;
+            font-size: 54px;
+            line-height: 160%;
+            margin-bottom: 52px;
+
+        }
+        .content-desc {
+            font-size: 24px;
+            font-weight: normal;
+            font-family: $font-secondary;
+            line-height: 160%;
+            margin-bottom: 52px;
+        }
+        span {
+            color: $secondary-color;
+        }
+        .content-action {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0 40px;
+        }
+            .btn-primary {
+                padding: 22px 38px;
+                font-size: 24px;
+                font-weight: 500;
+            }
+            .watch {
+                color: $graydark;
+                display: flex;
+                align-items: center;
+                gap: 0 20px;
+                &-icon {
+                    background-color: white;
+                    height: 80px;
+                    width: 80px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $blue;
+                    cursor: pointer;
+                }
+                a {
+                    color: $graydark;
+                }
+            }
+            
+            i {
+                font-size: 48px;
+            }
+    }
+    &-img {
+        width: 40%;
+    }
+    &-img img{
+        width: 100%;
+    }
+    
+
+}
+
+.nav-item-link {
+    font-size: 22px;
+    color: $gray;
+}
+
+
+.btn-second {
+    box-shadow: 1px 1px 8px 3px #dddddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
